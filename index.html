@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oleo+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Weather project app</title>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="app-container">
+      <header>
+        <form>
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            name="city"
+            required
+            class="city"
+            id="search-input"
+          />
+          <input type="submit" value="Search" class="search" />
+        </form>
+      </header>
+      <div>
+        <div class="current-weather">
+          <div class="todays-weather">
+            <h1>Durban</h1>
+            <p>
+              <span id="daytime"> Thursday 02:33</span>, heavy rain
+              <br />
+              Humidity: <strong>45%</strong>, Wind: <strong>5.67km/h</strong>
+            </p>
+          </div>
+          <div class="weather-today"></div>
+          <span class="weather-emoji">🌧️</span>
+          <span class="temperature">16</span>
+          <span class="degree">°C</span>
+        </div>
+      </div>
+      <footer>
+        <p>
+          This project was coded by Snethemba Shangase and is
+          <a href="https//https://github.com/" target="_blank"> on Github</a>
+          and
+          <a href="https://www.netlify.com/" target="_blank">
+            hosted on Netlify</a
+          >.
+        </p>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
